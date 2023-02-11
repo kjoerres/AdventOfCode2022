@@ -1,0 +1,318 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13189,        308]
+NotebookOptionsPosition[     11094,        269]
+NotebookOutlinePosition[     11493,        285]
+CellTagsIndexPosition[     11450,        282]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Day 1", "Title",
+ CellChangeTimes->{{3.8788962174485826`*^9, 
+  3.878896219350939*^9}},ExpressionUUID->"638930b4-a616-417d-8e4f-\
+31737c59a34f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"data", " ", "=", " ", 
+   RowBox[{
+   "Import", "[", "\"\<C:\\\\Users\\\\kylej\\\\Downloads\\\\day1.txt\>\"", 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.87889622079277*^9, 3.878896258995266*^9}, {
+   3.87889636317668*^9, 3.8788963904832287`*^9}, {3.878896466292186*^9, 
+   3.878896469595373*^9}, {3.8788966322024536`*^9, 3.878896633461136*^9}, 
+   3.8788966993618193`*^9},
+ CellLabel->
+  "In[117]:=",ExpressionUUID->"e559db06-933f-4c13-98e9-e579acc19c8b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Max", "[", "\n", "\t", 
+  RowBox[{
+   RowBox[{"Function", "[", "\n", "\t\t", 
+    RowBox[{"Total", "[", "\n", "\t\t\t", 
+     RowBox[{"ToExpression", "[", "\n", "\t\t\t\t", 
+      RowBox[{"StringSplit", "[", 
+       RowBox[{"#", ",", " ", "\"\<\\n\>\""}], "]"}], "\n", "\t\t\t", "]"}], 
+     "\n", "\t\t", "]"}], "\n", "\t", "]"}], " ", "/@", " ", 
+   RowBox[{"StringSplit", "[", 
+    RowBox[{"data", ",", " ", "\"\<\\n\\n\>\""}], "]"}]}], "\n", 
+  "]"}]], "Code",
+ CellChangeTimes->{{3.8788967005565567`*^9, 3.878896897510682*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"5fa22df8-d4c9-479e-81b5-53c950a556e6"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "StringSplit", "strse", 
+   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
+\"}]\\) in \\!\\(\\*RowBox[{\\\"StringSplit\\\", \\\"[\\\", \
+RowBox[{\\\"data\\\", \\\",\\\", \
+\\\"\\\\\\\"\\\\\\\\n\\\\\\\\n\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"", 2, 13, 5, 
+   34357204263006044961, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.878985119944709*^9, 3.8794341960626955`*^9, 
+  3.8796123611465683`*^9, 3.880026699772477*^9, 3.8802090465175796`*^9, 
+  3.880233864580856*^9, 3.88123970634869*^9, 3.8812487951780868`*^9},
+ CellLabel->
+  "During evaluation of \
+In[13]:=",ExpressionUUID->"ee1ba860-776a-4952-87ce-76886a47dec7"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "StringSplit", "strse", 
+   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
+\"}]\\) in \\!\\(\\*RowBox[{\\\"StringSplit\\\", \\\"[\\\", \
+RowBox[{\\\"data\\\", \\\",\\\", \\\"\\\\\\\"\\\\\\\\n\\\\\\\"\\\"}], \\\"]\\\
+\"}]\\).\"", 2, 13, 6, 34357204263006044961, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.878985119944709*^9, 3.8794341960626955`*^9, 
+  3.8796123611465683`*^9, 3.880026699772477*^9, 3.8802090465175796`*^9, 
+  3.880233864580856*^9, 3.88123970634869*^9, 3.8812487951790843`*^9},
+ CellLabel->
+  "During evaluation of \
+In[13]:=",ExpressionUUID->"28db3736-e0fe-4321-abf9-4edabb154224"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ToExpression", "notstrbox", 
+   "\"\\!\\(\\*RowBox[{\\\"StringSplit\\\", \\\"[\\\", RowBox[{\\\"data\\\", \
+\\\",\\\", \\\"\\\\\\\"\\\\\\\\n\\\\\\\"\\\"}], \\\"]\\\"}]\\) is not a \
+string or a box. ToExpression can only interpret strings or boxes as Wolfram \
+Language input.\"", 2, 13, 7, 34357204263006044961, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.878985119944709*^9, 3.8794341960626955`*^9, 
+  3.8796123611465683`*^9, 3.880026699772477*^9, 3.8802090465175796`*^9, 
+  3.880233864580856*^9, 3.88123970634869*^9, 3.881248795219975*^9},
+ CellLabel->
+  "During evaluation of \
+In[13]:=",ExpressionUUID->"24ae40a1-4369-4f76-85df-edb1c27e20a6"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "StringSplit", "strse", 
+   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
+\"}]\\) in \\!\\(\\*RowBox[{\\\"StringSplit\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"Total\\\", \\\"[\\\", \\\"$Failed\\\", \\\"]\\\"}], \\\",\
+\\\", \\\"0\\\"}], \\\"]\\\"}]\\).\"", 2, 13, 8, 34357204263006044961, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.878985119944709*^9, 3.8794341960626955`*^9, 
+  3.8796123611465683`*^9, 3.880026699772477*^9, 3.8802090465175796`*^9, 
+  3.880233864580856*^9, 3.88123970634869*^9, 3.881248795227573*^9},
+ CellLabel->
+  "During evaluation of \
+In[13]:=",ExpressionUUID->"426e2f4d-49c6-45e5-b55a-c26ba5ceb918"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"StringSplit\\\", \\\"::\
+\\\", \\\"strse\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 13, 9, 34357204263006044961, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.878985119944709*^9, 3.8794341960626955`*^9, 
+  3.8796123611465683`*^9, 3.880026699772477*^9, 3.8802090465175796`*^9, 
+  3.880233864580856*^9, 3.88123970634869*^9, 3.8812487952305613`*^9},
+ CellLabel->
+  "During evaluation of \
+In[13]:=",ExpressionUUID->"4bbaaf2b-17ab-4a39-8cfa-312934592f2b"],
+
+Cell[BoxData[
+ RowBox[{"StringSplit", "[", 
+  RowBox[{
+   RowBox[{"Total", "[", "$Failed", "]"}], ",", "0"}], "]"}]], "Output",
+ CellChangeTimes->{{3.878896790404459*^9, 3.878896841644278*^9}, 
+   3.878896899837905*^9, 3.8789851200209827`*^9, 3.879434196128519*^9, 
+   3.879612361213391*^9, 3.8800266998534064`*^9, 3.8802090465385246`*^9, 
+   3.880233864627144*^9, 3.8812397064225206`*^9, 3.881248795235803*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"373cc9c0-53e2-4365-8a29-c46257693e29"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"sortedTotalData", " ", "=", " ", 
+  RowBox[{"Reverse", "@", "\n", 
+   RowBox[{"Sort", "[", "\n", "\t", 
+    RowBox[{
+     RowBox[{"Function", "[", "\n", "\t\t", 
+      RowBox[{"Total", "[", "\n", "\t\t\t", 
+       RowBox[{"ToExpression", "[", "\n", "\t\t\t\t", 
+        RowBox[{"StringSplit", "[", 
+         RowBox[{"#", ",", " ", "\"\<\\n\>\""}], "]"}], "\n", "\t\t\t", "]"}],
+        "\n", "\t\t", "]"}], "\n", "\t", "]"}], " ", "/@", " ", 
+     RowBox[{"StringSplit", "[", 
+      RowBox[{"data", ",", " ", "\"\<\\n\\n\>\""}], "]"}]}], "\n", 
+    "]"}]}]}]], "Code",
+ CellChangeTimes->{{3.8788967005565567`*^9, 3.878896897510682*^9}, {
+  3.878896949789426*^9, 3.878896969959547*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"245516ff-86f8-411c-b062-9e6e7fff0e62"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "StringSplit", "strse", 
+   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
+\"}]\\) in \\!\\(\\*RowBox[{\\\"StringSplit\\\", \\\"[\\\", \
+RowBox[{\\\"data\\\", \\\",\\\", \
+\\\"\\\\\\\"\\\\\\\\n\\\\\\\\n\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"", 2, 14, 10, 
+   34357204263006044961, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.878985120068853*^9, 3.8794341962921104`*^9, 
+  3.8796123613120165`*^9, 3.880026699979707*^9, 3.8802090466843667`*^9, 
+  3.880233864660061*^9, 3.8812397065284376`*^9, 3.881248795355888*^9},
+ CellLabel->
+  "During evaluation of \
+In[14]:=",ExpressionUUID->"96745404-7601-48a9-8d00-93ccecd301e1"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "StringSplit", "strse", 
+   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
+\"}]\\) in \\!\\(\\*RowBox[{\\\"StringSplit\\\", \\\"[\\\", \
+RowBox[{\\\"data\\\", \\\",\\\", \\\"\\\\\\\"\\\\\\\\n\\\\\\\"\\\"}], \\\"]\\\
+\"}]\\).\"", 2, 14, 11, 34357204263006044961, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.878985120068853*^9, 3.8794341962921104`*^9, 
+  3.8796123613120165`*^9, 3.880026699979707*^9, 3.8802090466843667`*^9, 
+  3.880233864660061*^9, 3.8812397065284376`*^9, 3.8812487953609037`*^9},
+ CellLabel->
+  "During evaluation of \
+In[14]:=",ExpressionUUID->"9ee6cc05-6a8e-47f1-9ad0-eb4f4994c221"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ToExpression", "notstrbox", 
+   "\"\\!\\(\\*RowBox[{\\\"StringSplit\\\", \\\"[\\\", RowBox[{\\\"data\\\", \
+\\\",\\\", \\\"\\\\\\\"\\\\\\\\n\\\\\\\"\\\"}], \\\"]\\\"}]\\) is not a \
+string or a box. ToExpression can only interpret strings or boxes as Wolfram \
+Language input.\"", 2, 14, 12, 34357204263006044961, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.878985120068853*^9, 3.8794341962921104`*^9, 
+  3.8796123613120165`*^9, 3.880026699979707*^9, 3.8802090466843667`*^9, 
+  3.880233864660061*^9, 3.8812397065284376`*^9, 3.8812487953638973`*^9},
+ CellLabel->
+  "During evaluation of \
+In[14]:=",ExpressionUUID->"f2cea992-cc81-4a32-8edc-482ac17c5941"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "StringSplit", "strse", 
+   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
+\"}]\\) in \\!\\(\\*RowBox[{\\\"StringSplit\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"Total\\\", \\\"[\\\", \\\"$Failed\\\", \\\"]\\\"}], \\\",\
+\\\", \\\"0\\\"}], \\\"]\\\"}]\\).\"", 2, 14, 13, 34357204263006044961, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.878985120068853*^9, 3.8794341962921104`*^9, 
+  3.8796123613120165`*^9, 3.880026699979707*^9, 3.8802090466843667`*^9, 
+  3.880233864660061*^9, 3.8812397065284376`*^9, 3.88124879536689*^9},
+ CellLabel->
+  "During evaluation of \
+In[14]:=",ExpressionUUID->"eb5aa4f2-f1f9-4ee0-98b9-df39b8c1d28b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"StringSplit\\\", \\\"::\
+\\\", \\\"strse\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"", 2, 14, 14, 34357204263006044961, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.878985120068853*^9, 3.8794341962921104`*^9, 
+  3.8796123613120165`*^9, 3.880026699979707*^9, 3.8802090466843667`*^9, 
+  3.880233864660061*^9, 3.8812397065284376`*^9, 3.8812487953698816`*^9},
+ CellLabel->
+  "During evaluation of \
+In[14]:=",ExpressionUUID->"dfb1257f-1f1f-4f28-96ed-4c215eec54c0"],
+
+Cell[BoxData[
+ RowBox[{"StringSplit", "[", 
+  RowBox[{
+   RowBox[{"Total", "[", "$Failed", "]"}], ",", "0"}], "]"}]], "Output",
+ CellChangeTimes->{3.87898512008484*^9, 3.8794341963100843`*^9, 
+  3.8796123613309665`*^9, 3.8800267000065947`*^9, 3.8802090467023196`*^9, 
+  3.880233864678336*^9, 3.8812397065492215`*^9, 3.881248795374869*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"0452a18f-ec61-4c7e-b97e-825fd2b6641a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"sortedTotalData", "[", 
+   RowBox[{"[", 
+    RowBox[{"1", ";;", "3"}], "]"}], "]"}], " ", "//", " ", 
+  "Total"}]], "Input",
+ CellChangeTimes->{{3.878896974587559*^9, 3.8788969834324727`*^9}},
+ CellLabel->
+  "In[135]:=",ExpressionUUID->"f0adbcca-242f-4670-9f9f-e58c5db07edc"],
+
+Cell[BoxData["206152"], "Output",
+ CellChangeTimes->{{3.878896978810007*^9, 3.8788969837702055`*^9}},
+ CellLabel->
+  "Out[135]=",ExpressionUUID->"d117d9d6-2b08-4810-9408-c401c00aa943"]
+}, Open  ]]
+}, Closed]]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (July 9, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a18162fd-45af-4545-9c54-8497e9621ce3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 150, 3, 98, "Title",ExpressionUUID->"638930b4-a616-417d-8e4f-31737c59a34f"],
+Cell[733, 27, 500, 11, 28, "Input",ExpressionUUID->"e559db06-933f-4c13-98e9-e579acc19c8b"],
+Cell[CellGroupData[{
+Cell[1258, 42, 635, 13, 188, "Code",ExpressionUUID->"5fa22df8-d4c9-479e-81b5-53c950a556e6"],
+Cell[1896, 57, 698, 14, 70, "Message",ExpressionUUID->"ee1ba860-776a-4952-87ce-76886a47dec7"],
+Cell[2597, 73, 685, 13, 70, "Message",ExpressionUUID->"28db3736-e0fe-4321-abf9-4edabb154224"],
+Cell[3285, 88, 707, 13, 70, "Message",ExpressionUUID->"24ae40a1-4369-4f76-85df-edb1c27e20a6"],
+Cell[3995, 103, 713, 14, 70, "Message",ExpressionUUID->"426e2f4d-49c6-45e5-b55a-c26ba5ceb918"],
+Cell[4711, 119, 623, 12, 70, "Message",ExpressionUUID->"4bbaaf2b-17ab-4a39-8cfa-312934592f2b"],
+Cell[5337, 133, 490, 8, 70, "Output",ExpressionUUID->"373cc9c0-53e2-4365-8a29-c46257693e29"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5864, 146, 788, 16, 206, "Code",ExpressionUUID->"245516ff-86f8-411c-b062-9e6e7fff0e62"],
+Cell[6655, 164, 700, 14, 70, "Message",ExpressionUUID->"96745404-7601-48a9-8d00-93ccecd301e1"],
+Cell[7358, 180, 689, 13, 70, "Message",ExpressionUUID->"9ee6cc05-6a8e-47f1-9ad0-eb4f4994c221"],
+Cell[8050, 195, 713, 13, 70, "Message",ExpressionUUID->"f2cea992-cc81-4a32-8edc-482ac17c5941"],
+Cell[8766, 210, 716, 14, 70, "Message",ExpressionUUID->"eb5aa4f2-f1f9-4ee0-98b9-df39b8c1d28b"],
+Cell[9485, 226, 627, 12, 70, "Message",ExpressionUUID->"dfb1257f-1f1f-4f28-96ed-4c215eec54c0"],
+Cell[10115, 240, 417, 7, 70, "Output",ExpressionUUID->"0452a18f-ec61-4c7e-b97e-825fd2b6641a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10569, 252, 310, 8, 28, "Input",ExpressionUUID->"f0adbcca-242f-4670-9f9f-e58c5db07edc"],
+Cell[10882, 262, 184, 3, 32, "Output",ExpressionUUID->"d117d9d6-2b08-4810-9408-c401c00aa943"]
+}, Open  ]]
+}, Closed]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
